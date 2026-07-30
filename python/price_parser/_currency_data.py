@@ -1,0 +1,57 @@
+# Generated from price-parser 0.5.1 currency data (BSD-3-Clause).
+
+CURRENCY_CODES = (
+    'AED', 'AFN', 'ALL', 'AMD', 'ANG', 'AOA', 'ARS', 'AUD', 'AWG', 'AFL', 'AZN', 'BAM',
+    'BDT', 'BBD', 'BGN', 'BHD', 'BIF', 'BSD', 'BMD', 'BND', 'BOB', 'BOV', 'BRL', 'BTN',
+    'BWP', 'BYN', 'BZD', 'CAD', 'CDF', 'CHE', 'CHF', 'CHW', 'CLF', 'CLP', 'CNY', 'COP',
+    'COU', 'CRC', 'CUC', 'CUP', 'CVE', 'CZK', 'DJF', 'DKK', 'DOP', 'DZD', 'EEK', 'EGP',
+    'ERN', 'ETB', 'EUR', 'FJD', 'FKP', 'GBP', 'GEL', 'GGP', 'GHS', 'GIP', 'GMD', 'GNF',
+    'GTQ', 'GYD', 'HKD', 'HNL', 'HRK', 'HTG', 'HUF', 'IDR', 'ILS', 'IMP', 'INR', 'IQD',
+    'IRR', 'ISK', 'JEP', 'JMD', 'JOD', 'JPY', 'KES', 'KGS', 'KHR', 'KMF', 'KPW', 'KRW',
+    'KWD', 'KYD', 'KZT', 'LAK', 'LBP', 'LKR', 'LRD', 'LSL', 'LTL', 'LVL', 'LYD', 'MAD',
+    'MDL', 'MGA', 'MKD', 'MMK', 'MNT', 'MOP', 'MRO', 'MUR', 'MVR', 'MWK', 'MXN', 'MXV',
+    'MYR', 'MZN', 'NAD', 'NGN', 'NIO', 'NOK', 'NPR', 'PRB', 'NZD', 'OMR', 'PAB', 'PEN',
+    'PGK', 'PHP', 'PKR', 'PLN', 'PYG', 'QAR', 'RON', 'RSD', 'RUB', 'RWF', 'SAR', 'SBD',
+    'SCR', 'SDG', 'SEK', 'SGD', 'SHP', 'SLL', 'SOS', 'SRD', 'SSP', 'STD', 'SVC', 'SYP',
+    'SZL', 'THB', 'TJS', 'TMT', 'TND', 'TOP', 'TRY', 'TTD', 'TVD', 'TWD', 'TZS', 'UAH',
+    'UGX', 'USD', 'USN', 'UYI', 'UYU', 'UZS', 'VEF', 'VND', 'VUV', 'WST', 'XAF', 'XAG',
+    'XAU', 'XBA', 'XBB', 'XBC', 'XBD', 'XCD', 'XDR', 'XOF', 'XPD', 'XPF', 'XPT', 'XSU',
+    'XTS', 'XUA', 'XXX', 'YER', 'ZAR', 'ZMK', 'ZMW', 'ZWD', 'ZWL', 'NTD', 'RMB', 'ATS',
+    'BEF', 'CYP', 'DEM', 'NLG', 'FIM', 'FRF', 'GRD', 'IEP', 'ITL', 'LUF', 'MTL', 'PTE',
+    'SKK', 'SIT', 'ESP', 'VAL',
+)
+
+CURRENCY_SYMBOLS = (
+    '$', '$U', '-', 'AED', 'ALL', 'AMD', 'AR$', 'AU$', 'Af', 'Afl.', 'B/.', 'BD',
+    'BGN', 'BN$', 'BWP', 'BZ$', 'Bds$', 'Br', 'Bs', 'Bs.F.', 'C$', 'CA$', 'CDF', 'CF',
+    'CFA', 'CFP', 'CHF', 'CL$', 'CN¥', 'CO$', 'CUC$', 'CV$', 'CYP', 'D', 'DA', 'DM',
+    'DT', 'Db', 'Dkr', 'EGP', 'F', 'FBu', 'FCFA', 'FG', 'FIM', 'Fdj', 'Ft', 'G', 'GEL',
+    'GH₵', 'GRD', 'GTQ', 'HK$', 'HNL', 'IQD', 'IRR', 'IR£', 'Ikr', 'J$', 'JD', 'K',
+    'KD', 'KHR', 'KM', 'KZT', 'Ksh', 'Kz', 'Kč', 'L', 'LB£', 'LD', 'Le', 'Lm', 'Ls',
+    'Lt', 'MAD', 'MDL', 'MGA', 'MK', 'MKD', 'MMK', 'MOP$', 'MRf', 'MTn', 'MURs', 'MX$',
+    'N$', 'NPRs', 'NT$', 'NZ$', 'Nfk', 'Nkr', 'Nu.', 'OMR', 'PKRs', 'Pta', 'QR', 'R',
+    'R$', 'RD$', 'RM', 'RON', 'RUB', 'RWF', 'Rp', 'Rs', 'S$', 'S/.', 'SDG', 'SIT',
+    'SKK', 'SLRs', 'SR', 'SSP', 'SY£', 'Skr', 'Ssh', 'Sucre', 'T', 'T$', 'TL', 'TSh',
+    'TT$', 'Tk', 'UF', 'UM', 'USh', 'UYI', 'UZS', 'VT', 'WS$', 'XAG', 'XAU', 'XBA',
+    'XBB', 'XBC', 'XBD', 'XDR', 'XPD', 'XPT', 'XTS', 'XUA', 'XXX', 'YR', 'Z$', 'ZK',
+    'din.', 'fl.', 'fr.', 'kn', 'kr', 'man.', 'zł', '£', '¥', 'öS', 'ƒ', 'лв', 'руб',
+    '฿', '₡', '₦', '₨', '₩', '₪', '₫', '€', '₭', '₮', '₱', '₲', '₴',
+)
+
+CURRENCY_NATIONAL_SYMBOLS = (
+    '$', '-', 'Afl.', 'B/.', 'Br', 'Bs', 'Bs.F.', 'C$', 'CFA', 'CFP', 'CHF', 'CN¥',
+    'CV$', 'D', 'D-Mark', 'Db', 'FBu', 'FC', 'FCFA', 'FG', 'FR', 'Fdj', 'Fr.', 'FrCD',
+    'Ft', 'G', 'GEL', 'GH₵', 'K', 'KM', 'Ksh', 'Kz', 'Kč', 'L', 'LEI', 'LTL', 'LUF',
+    'LVL', 'Le', 'Lei', 'Lek', 'MDL', 'MGA', 'MK', 'MKD', 'MOP$', 'MTn', 'MURs', 'N$',
+    'NT$', 'Nfk', 'Nu.', 'P', 'Pt', 'Ptas', 'Pts', 'Q', 'R', 'R$', 'RD$', 'RM', 'RON',
+    'Rf', 'Rp', 'S/.', 'SDG', 'SIT', 'SL Re', 'SSP', 'Sk', 'Ssh', 'Sucre', 'T', 'T$',
+    'TL', 'TSh', 'UF', 'UM', 'USh', 'UYI', 'UZS', 'VT', 'XAG', 'XAU', 'XBA', 'XBB',
+    'XBC', 'XBD', 'XDR', 'XPD', 'XPT', 'XTS', 'XUA', 'XXX', 'Z$', 'ZK', 'fr.', 'kn',
+    'kr', 'kroon', 'lei', 'leu', 'litų', 'mk.', 'pln', 'tolarjev', 'zł', '£', 'öS',
+    'đ', 'ƒ', 'Δρ.', 'Δρχ.', 'дин.', 'лв', 'лв.', 'ман.', 'руб', 'руб.', 'тңг.', 'դր.',
+    '؋', 'ج.م.\u200f', 'د.أ.\u200f', 'د.إ.\u200f', 'د.ب.\u200f', 'د.ت.\u200f',
+    'د.ج.\u200f', 'د.ع.\u200f', 'د.ك.\u200f', 'د.ل.\u200f', 'د.م.\u200f', 'ر.س.\u200f',
+    'ر.ع.\u200f', 'ر.ق.\u200f', 'ر.ي.\u200f', 'ریال', 'ل.س.\u200f', 'ل.ل.\u200f',
+    'नेरू', 'र', 'টকা', '৳', '฿', '៛', '₡', '₣', '₤', '₦', '₧', '₨', '₪', '₫', '€',
+    '₭', '₮', '₯', '₱', '₲', '₴', '₹', '円', '원', '﷼', '￥',
+)

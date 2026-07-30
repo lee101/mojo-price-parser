@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mojo-price-parser"
+version = "0.1.0"
+description = "Mojo-accelerated parsing of prices from raw strings"
+readme = "README.md"
+requires-python = ">=3.9"
+license = "MIT"
+
+[tool.setuptools]
+package-dir = {"" = "python"}
+
+[tool.setuptools.packages.find]
+where = ["python"]
