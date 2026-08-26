@@ -182,6 +182,14 @@ def test_simd_scan_and_scalar_tail_parity(prefix_length):
     ]
 
 
+@pytest.mark.parametrize("length", [255, 256, 257, 271, 272, 273])
+def test_single_adaptive_path_and_simd_tail_parity(length):
+    suffix = " 12.34 each"
+    raw = f"{'x' * (length - len(suffix))}{suffix}"
+    assert len(raw) == length
+    assert parser.extract_price_text(raw) == UPSTREAM_PARSER.extract_price_text(raw)
+
+
 def test_parallel_byte_threshold_parity():
     count = 4096
     value = b"x" * 16_376 + b" 1.99"

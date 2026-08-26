@@ -141,6 +141,8 @@ _REGULAR_PRICE_RE = re.compile(
     re.VERBOSE,
 )
 _SEARCH_NONSTANDARD_WHITESPACE = re.compile(r"[^\S ]| {2}").search
+_SEARCH_NONASCII_DECIMAL = re.compile(r"(?=[^\x00-\x7f])\d").search
+_SINGLE_MOJO_MIN_BYTES = 256
 
 
 def _normalize_whitespace(price: str) -> str:
@@ -162,9 +164,9 @@ def _extract_regular_python(price: str) -> str | None:
 
 
 def _extract_regular(price: str) -> str | None:
-    if not price.isascii() and any(
-        char.isdecimal() and not char.isascii() for char in price
-    ):
+    if len(price) < _SINGLE_MOJO_MIN_BYTES:
+        return _extract_regular_python(price)
+    if not price.isascii() and _SEARCH_NONASCII_DECIMAL(price):
         return _extract_regular_python(price)
     encoded = price.encode("utf-8")
     result = (ctypes.c_int64 * 2)(-1, -1)
@@ -264,7 +266,7 @@ def _extract_many_amount_texts(
         if (
             special[index] is None
             and not price.isascii()
-            and any(char.isdecimal() and not char.isascii() for char in price)
+            and _SEARCH_NONASCII_DECIMAL(price)
         ):
             special[index] = _extract_regular_python(price)
             use_python_result[index] = True
